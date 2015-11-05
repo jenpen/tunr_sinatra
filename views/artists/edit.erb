@@ -1,22 +1,25 @@
-<h2>Edit <%= @edit_this_artist.name %>'s Info</h2>
+<h2>Edit <%= @artist.name %>'s Info</h2>
 
-<form action="/artists/<%= @edit_this_artist.id %>" method="post">
+<form action="/artists/<%= @artist.id %>" method="post">
+  <input type="hidden" name="method" value="put">
 
 <!-- Artist Name -->
   <label for="artist[name]">Change Artist Name:</label>
-    <input name="artist[name]" placeholder="enter full name"/>
+    <input name="artist[name]" placeholder="enter full name" value="<%= @artist.name %>"/>
 
 <!-- Artist Nationality -->
   <label for="artist[nationality]">Change Artist's Nationality:</label>
-    <input name="artist[nationality]" placeholder="enter nationality"/>
+    <input name="artist[nationality]" placeholder="enter nationality" value="<%= @artist.nationality %>"/>
 
 <!-- Artist Picture -->
   <label for="artist[photo_ur]">Updload New Artist's Picture:</label>
-    <input name="artist[photo_url]" placeholder="paste url"/>
+    <input name="artist[photo_url]" placeholder="paste url" value="<%= @artist.photo_url %>"/>
+
+
 <div class="spacing">
   <button id="submit_edit_artist">Submit</button>
 </div>
 </form>
 <div class="spacing">
-  <a href="/artists/<%= @edit_this_artist.id %>">← Back to <%= @edit_this_artist.name %>'s Page</a>
+  <a href="/artists/<%= @artist.id %>">← Back to <%= @artist.name %>'s Page</a>
 </div>

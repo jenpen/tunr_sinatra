@@ -1,12 +1,24 @@
 body {
   margin: 0 auto;
+  background: url("http://www.nicholls.edu/news/files/2010/11/Notes.jpg");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center;
+}
+
+header {
   padding: 50px;
-  background: #333;
+}
+.content {
+  margin: 0 auto;
+  padding: 50px;
+  background-color: RGBA(33, 33, 33, .9);
   color: #fff;
   font-family: sans-serif;
   text-align: center;
+  max-width: 500px;
+  border-radius: 20px;
 }
-
 .spacing {
   margin: 10px;
 }
@@ -17,24 +29,17 @@ ul {
   padding: 0;
 }
 
-/* unvisited link */
-a:link {
-    color: red;
+/* unvisited link, visted link*/
+a, a:visited {
+  color: #fff;
+  text-decoration: none;
 }
 
-/* visited link */
-a:visited {
-    color: green;
-}
 
-/* mouse over link */
-a:hover {
-    color: hotpink;
-}
-
-/* selected link */
-a:active {
-    color: blue;
+/* mouse over link, active link */
+a:hover, a:active {
+  color: #fff;
+  text-decoration: underline;
 }
 
 .new_artist {
@@ -43,8 +48,8 @@ a:active {
 }
 
 .artist_img {
-  width: 60%;
-  height: 60%;
+  width: 90%;
+  height: 90%;
   border: 3px solid #fff;
 }
 
