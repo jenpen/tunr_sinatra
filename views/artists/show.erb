@@ -1,5 +1,14 @@
 <a href="/artists">Back to All Artists</a>
 
+<!-- Display Artist Name -->
 <h2><%= @each_artist.name %></h2>
+
+<!-- Edit This Artist -->
+<div class="spacing">
+  <a href="/artists/<%= @each_artist.id%>/edit">Edit this artist</a>
+</div>
+<!-- Show Artist Picture -->
 <img class="artist_img" src="<%= @each_artist.photo_url %>"/>
+
+<!-- Artist Nationality -->
 <p>Nationality: <%= @each_artist.nationality %></p>

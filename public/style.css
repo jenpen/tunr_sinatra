@@ -7,6 +7,10 @@ body {
   text-align: center;
 }
 
+.spacing {
+  margin: 10px;
+}
+
 ul {
   list-style-type: none;
   margin: 0;
@@ -65,14 +69,23 @@ label {
 }
 
 label + input {
-    width: 30%;
+    width: 33%;
     /* large margin-right to force the next element to the new-line
        and margin-left to create a gutter between the label and input */
     margin: 0 0 0 5%;
 }
 
-button {
+#submit_new_artist, #submit_edit_artist {
   margin: 0 auto;
-  width: 70%;
+  width: 75%;
+  height: 10%;
+  text-align: center;
+  font-size: 1.5em;
+}
+
+#request_edit_artist {
+  margin: 20px;
+  padding: 5px;
+  width: 20%;
   text-align: center;
 }

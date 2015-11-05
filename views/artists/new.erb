@@ -1,10 +1,21 @@
 <h2>Add New Artist</h2>
-<form method="post" action="/artists/">
-  <label>Artist's Full Name:</label>
-    <input type="text" placeholder="Full Name"/>
-  <label>Artist's Nationality:</label>
-  <input type="text" placeholder="Nationality"/>
-  <label>Add Artist's Picture:</label>
-  <input type="url" placeholder="paste url"/>
-  <button class="submit_new_artist">Submit</button>
+<form action="/artists" method="post">
+
+<!-- Artist Name -->
+  <label for="artist[name]">Artist's Full Name:</label>
+    <input name="artist[name]" placeholder="enter full name"/>
+
+<!-- Artist Nationality -->
+  <label for="artist[nationality]">Artist's Nationality:</label>
+    <input name="artist[nationality]" placeholder="enter nationality"/>
+
+<!-- Artist Picture -->
+  <label for="artist[photo_ur]">Add Artist's Picture:</label>
+    <input name="artist[photo_url]" placeholder="paste url"/>
+
+  <div class="spacing">
+    <button id="submit_new_artist">Submit</button>
+  </div>
 </form>
+
+<a href="/artists">← Back to All Artists</a>

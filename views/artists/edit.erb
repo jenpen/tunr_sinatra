@@ -1,0 +1,22 @@
+<h2>Edit <%= @edit_this_artist.name %>'s Info</h2>
+
+<form action="/artists/<%= @edit_this_artist.id %>" method="post">
+
+<!-- Artist Name -->
+  <label for="artist[name]">Change Artist Name:</label>
+    <input name="artist[name]" placeholder="enter full name"/>
+
+<!-- Artist Nationality -->
+  <label for="artist[nationality]">Change Artist's Nationality:</label>
+    <input name="artist[nationality]" placeholder="enter nationality"/>
+
+<!-- Artist Picture -->
+  <label for="artist[photo_ur]">Updload New Artist's Picture:</label>
+    <input name="artist[photo_url]" placeholder="paste url"/>
+<div class="spacing">
+  <button id="submit_edit_artist">Submit</button>
+</div>
+</form>
+<div class="spacing">
+  <a href="/artists/<%= @edit_this_artist.id %>">← Back to <%= @edit_this_artist.name %>'s Page</a>
+</div>
