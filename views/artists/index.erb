@@ -3,7 +3,12 @@
 <ul>
   <% @artists.each do |artist| %>
     <li>
-      <%= artist.name %>
+        <a href="/artists/<%= artist.id %>">
+        <%= artist.name %></a>
     </li>
   <% end %>
 </ul>
+
+<div class="new_artist">
+<a href="/artists/new">Add a New Artist</a>
+</div>

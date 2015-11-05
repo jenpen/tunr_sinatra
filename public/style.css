@@ -1,5 +1,7 @@
 body {
-  background: #777;
+  margin: 0 auto;
+  padding: 50px;
+  background: #333;
   color: #fff;
   font-family: sans-serif;
   text-align: center;
@@ -7,4 +9,70 @@ body {
 
 ul {
   list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+/* unvisited link */
+a:link {
+    color: red;
+}
+
+/* visited link */
+a:visited {
+    color: green;
+}
+
+/* mouse over link */
+a:hover {
+    color: hotpink;
+}
+
+/* selected link */
+a:active {
+    color: blue;
+}
+
+.new_artist {
+  margin: 0 auto;
+  padding: 50px;
+}
+
+.artist_img {
+  width: 60%;
+  height: 60%;
+  border: 3px solid #fff;
+}
+
+/*New Artist Form*/
+
+form {
+    width: 80%;
+    margin: 0 auto;
+}
+
+label, input {
+    /* in order to define widths */
+    display: inline-block;
+    margin-bottom: 15px;
+}
+
+label {
+    width: 30%;
+    /* positions the label text beside the input */
+    text-align: right;
+    margin-left: 10px;
+}
+
+label + input {
+    width: 30%;
+    /* large margin-right to force the next element to the new-line
+       and margin-left to create a gutter between the label and input */
+    margin: 0 0 0 5%;
+}
+
+button {
+  margin: 0 auto;
+  width: 70%;
+  text-align: center;
 }
