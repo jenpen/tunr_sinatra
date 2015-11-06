@@ -11,7 +11,6 @@ end
 
 # Edit (render form to edit existing artist) - GET "/artists/:id/edit"
 get "/artists/:id/edit" do
-  puts " 🌟 " * 12
   @artist = Artist.find(params[:id])
   erb :"artists/edit"
 end
