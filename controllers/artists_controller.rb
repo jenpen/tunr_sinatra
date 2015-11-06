@@ -30,15 +30,16 @@ end
 
 
 # Update (submit form to update existing artist) - PUT "/artists/:id"
-post "/artists/:id" do
+put "/artists/:id" do
   @artist = Artist.find(params[:id])
   @artist.update(params[:artist])
   redirect("/artists/#{@artist.id}")
 end
 
 # Destroy (delete an existing artist) - DELETE "/artists/:id"
-# delete "/artists/:id" do
-#   @artist = Artist.find(params[:id])
-#   @artist.update(params[:artist])
-#   redirect("/artists/#{@artist.id}")
-# end
+
+delete "/artists/:id" do
+  @artist = Artist.find(params[:id])
+  @artist.destroy
+  redirect("/artists")
+end

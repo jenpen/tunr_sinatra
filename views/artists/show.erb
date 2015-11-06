@@ -6,7 +6,6 @@
 <!-- Edit/Delete This Artist -->
 <div class="spacing">
   <a href="/artists/<%= @artist.id%>/edit">Edit this artist</a>
-  <!-- <a href="/artists/<%= @artist.id%>/">Delete this artist</a> -->
 </div>
 <!-- Show Artist Picture -->
 <img class="artist_img" src="<%= @artist.photo_url %>"/>
@@ -15,5 +14,6 @@
 <p>Nationality: <%= @artist.nationality %></p>
 
 <form method="post" action="/artists/<%= @artist.id %>">
-  <input type="hidden" name="_method" value="put">
-</form>
+  <input type="hidden" name="_method" value="delete">
+  <input class="button-delete" type="submit" value="Delete <%=@artist.name %>">
+</form

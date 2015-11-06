@@ -6,12 +6,12 @@ body {
   background-position: center;
 }
 
-header {
-  padding: 50px;
+header, footer {
+  padding: 25px;
 }
 .content {
   margin: 0 auto;
-  padding: 50px;
+  padding: 20px;
   background-color: RGBA(33, 33, 33, .9);
   color: #fff;
   font-family: sans-serif;
